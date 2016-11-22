@@ -71,6 +71,9 @@ Once you have an Azure Resource Group project that contains a logic app, you can
 
 You will also see `Microsoft.Web/connections` resources being added to your resource file for any connections needed for the logic app to function.  These connection properties can be set when you deploy, and managed after you deploy in **API Connections** in the Azure Portal.
 
+### Associate your Logic App with an Integration Account
+Ensure you have an Integration Account created in the same subscription as your Logic App.  Always make sure you associate your Logic App with your Integration Account before using Integration Account resources like Transform.  To link the two artifacts, click anyplace inside the designer surface.  Look inside the Properties Windows.  Select the correct Integration Account for the drop down. Save your Logic App. 
+
 ### Switching to the JSON code-view
 You can select the **Code View** tab on the bottom of the designer to switch to the JSON representation of the logic app.  To switch back to the full resource JSON, right-click the `<template>.json` file and select **Open**.
 
